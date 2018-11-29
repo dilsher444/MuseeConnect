@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLaout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.technoapplab.museeconnect.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/content"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/ed_postal_code"
+            android:maxLength="6"
+            android:hint="Postal Code"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Search"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/btn_search"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+
+</LinearLaout>
